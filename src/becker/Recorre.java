@@ -8,27 +8,22 @@ import becker.robots.*;
 import java.awt.Color;
 /**
  *
- * @author lotalorafox
+ * @author BryanM
  */
-public class r5 {
+public class Recorre {
     private Robot r ;
     
     
-    public r5(City c){
+    public Recorre(City c){
         
         r = new Robot(c,6,7,Direction.NORTH);
-   //   Thing bola= new Thing (c, 7, 5);
-    //  Thing casa = new Thing(c,7,4);
-     //   casa.setColor(Color.lightGray);
+   
         
         
     }
     public void recorrer(City c){
         
-    /*  r.setTransparency(1);
-        r.move();
-        r.pickThing();
-        System.out.println(r.countThingsInBackpack()); */
+   
        
     while (r.canPickThing()==false){
    r.turnLeft();
