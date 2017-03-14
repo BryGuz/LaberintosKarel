@@ -83,12 +83,10 @@ public class Escenario {
         
         
         //cosas 
-        t[0] = new Thing(c,2,7);
-        t[1] = new Thing(c,3,5);
-        t[2] = new Thing(c,5,4);
-        casa = new Thing(c,7,4);
-        casa.setColor(Color.red);
-        
+       
+         Thing bola= new Thing (c, 7, 5);
+   //   Thing casa = new Thing(c,7,4);
+     //   casa.setColor(Color.lightGray);
         
         
     }
