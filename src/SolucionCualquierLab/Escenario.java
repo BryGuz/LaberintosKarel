@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package becker;
+package SolucionCualquierLab;
 import becker.robots.*;
 import java.awt.Color;
 /**
@@ -85,8 +85,7 @@ public class Escenario {
         //cosas 
        
          Thing bola= new Thing (c, 7, 5);
-   //   Thing casa = new Thing(c,7,4);
-     //   casa.setColor(Color.lightGray);
+ 
         
         
     }

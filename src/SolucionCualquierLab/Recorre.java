@@ -3,9 +3,10 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package becker;
+package SolucionCualquierLab;
 import becker.robots.*;
 import java.awt.Color;
+import java.util.Scanner;
 /**
  *
  * @author BryanM
@@ -16,7 +17,18 @@ public class Recorre {
     
     public Recorre(City c){
         
-        r = new Robot(c,6,7,Direction.NORTH);
+        Scanner sc = new Scanner(System.in);
+        
+        System.out.println("Digite Posicion del Robot dentro del laberinto ");
+     
+        System.out.print("X = ");
+        int x = sc.nextInt();
+        System.out.print("Y = ");
+        int y = sc.nextInt();
+        
+        r = new Robot(c,x,y,Direction.NORTH);
+        
+       
    
         
         
