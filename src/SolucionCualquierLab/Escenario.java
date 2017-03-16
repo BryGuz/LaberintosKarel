@@ -18,10 +18,14 @@ public class Escenario {
     
     
     
-    
+    /**
+     * 
+     * @param c Ciudad de Karel
+     * Metodo Para crear Laberinto 1
+     */
     public Escenario(City c){
         es = c;
-        //Paredes 
+        
         int i;
         for( i=0;i<4;i++){
             block[i] = new Wall(es, 1, i+3, Direction.NORTH);
@@ -82,7 +86,7 @@ public class Escenario {
         block[i] = new Wall(es, 6, 4, Direction.EAST);i++;
         
         
-        //cosas 
+        // Thing 
        
          Thing bola= new Thing (c, 7, 5);
  

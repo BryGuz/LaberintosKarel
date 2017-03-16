@@ -14,12 +14,12 @@ public class MainLab {
         City map = new City(11,11);
         
         // laberinto 1
-       Escenario l = new Escenario(map);
+      Escenario l = new Escenario(map);
        
        //laberinto 2
        
-        //EscenarioKarel x = new EscenarioKarel(map);
-      // x.EscenarioKarel(map);
+       // EscenarioKarel x = new EscenarioKarel();
+       //x.EscenarioKarel(map);
       Recorre fran = new Recorre(map);
        fran.recorrer(map);
     }

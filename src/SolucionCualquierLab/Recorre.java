@@ -33,6 +33,11 @@ public class Recorre {
         
         
     }
+    /**
+     * 
+     * @param c Ciudad de karel
+     * Metodo que permite encontrar la solucion al laberinto
+     */
     public void recorrer(City c){
         
    
@@ -40,7 +45,7 @@ public class Recorre {
     while (r.canPickThing()==false){
    r.turnLeft();
     while (r.frontIsClear()==false){
-     this.advanceRight();
+     this.izq();
     }
     r.move();
     }
@@ -48,7 +53,10 @@ public class Recorre {
     r.pickThing();
     }
 }
- private void advanceRight(){
+    /** 
+     * Metodo que permite girar a la izquierda
+     */
+ private void izq(){
     for (int i = 0; i < 3; i++) {
     this.r.turnLeft(); 
     

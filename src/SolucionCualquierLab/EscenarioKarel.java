@@ -14,7 +14,10 @@ import becker.robots.*;
 public class EscenarioKarel {
     City laberinto;
     Wall bloque[] = new Wall[34];
-    
+    /**
+     * 
+     * @param c Recibe ciudad de Karel
+     */
     public void EscenarioKarel(City c){
        laberinto = c;
         int i;
@@ -28,7 +31,7 @@ public class EscenarioKarel {
         for(i=0;i<7;i++){
             bloque[i]= new Wall(laberinto,i+2,8,Direction.EAST);
         }        
-        Thing exit = new Thing(laberinto,8,9);
+        
         
         for(i=0; i<7;i++){
             bloque[i]= new Wall(laberinto,8,i+2,Direction.SOUTH);
@@ -69,6 +72,8 @@ public class EscenarioKarel {
             bloque[i]= new Wall(laberinto,i+5,7,Direction.EAST);
         }
         
+        // Thing 
+        Thing exit = new Thing(laberinto,8,9);
     }
     
     
